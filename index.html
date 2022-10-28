@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Security Mdz</title>
+    <link rel="stylesheet" href="estilo.css">
+<!-- 
+    no te lo mostraba porque estaba mal la ruta, esta dentro de la carpeta img/ -->
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon"> 
+</head>
+
+<body>
+    <header>
+        <div class="cont-header conte-uno">
+            <img class="usuario" src="img/usuario.jpg.png" width="60px" alt="">
+        </div>
+        <div class="cont-header">
+            <h1 class="titulo"> Security Mdz</h1>
+        </div>
+        <div class="cont-header" >
+            <!-- <img class="iconocontacto" src="img/contacto.png" width="40px" 
+            alt=""> -->
+            <img class="iconobarritas" src="img/3 barritas.png" width="40px" 
+            alt=""> 
+        </div>
+    </header>
+
+    <section class="sectionOpciones">
+
+       <div class="contenedor-uno">
+
+            <input class="hola" type="checkbox" id="botonInfo">
+            <label class="botonInfo" for="botonInfo">
+
+                <h2 class="subtitulos">Información </h2>
+                <figure><img src="img/pregunta.png" width="100px" alt=""></figure>
+
+            </label>
+
+            <div class="contenedorInfo">
+
+                    <h3>Información</h3>
+                    <p>Esta página sirve para aquellas personas que no saben
+                        ubicarse en la provincia o no son concientes de los riesgos ya que hay zonas muy peligrosas en las calles de Mendoza. Básicamente la pagina trata de un mapa 
+                        en donde marcan las zonas seguras e inseguras de Mendoza.
+                        </p>
+            </div>
+        
+       </div>
+
+        <div class="contenedormapa">
+        <h2 class="subtitulos">Mapa</h2>
+        <iframe src="https://www.google.com/maps/d/embed?mid=15NGb5LctKEZ7bm91UTvgTbB5wGA_ZtY&ehbc=2E312F"  width="498" height="385"></iframe>
+        </div>
+
+
+        <div class="contenedor-uno">
+
+            <input class="hola" type="checkbox" id="botonUsar">
+            <label class="boton-Usar" for="botonUsar">
+
+                <h2 class="subtitulos">¿Como se usa? </h2>
+                 <figure><img src="img/pregunta.png" width="100px" alt=""></figure>
+
+              </label>
+
+             <div class="contenedorUsar">
+                 
+                 <h3>¿Como se Usa?</h3>
+                 <p>Es fácil de usar, lo único que tienes que hacer es meterte al mapa y buscar
+                    tu destino o las calles por las que vas a transitar y el mapa te va a indicar
+                    si es seguro o no.</p>
+            </div>
+        </div>        
+        
+    </section>
+  <section class="opinion">
+    
+        <iframe src="https://editor.p5js.org/francofelipe940/full/LHkcDpZYw" width="400" height="300"></iframe>
+
+  </section>
+
+  <footer>
+    <div class="creadores">
+        <p>Sitio web realizado por Lautaro Marcantoni y Franco Serrano © Todos los derechos reservados. </p>
+    </div>
+
+    
+    <div class="contenedor-compartir">
+        
+        <input class="hola" type="checkbox" name="" id="hola">
+        <label for="hola"><img src="img/share.svg" width="40px"></label>
+
+
+         <div class="compartir">
+            <p>Comparte nuestro sitio </p>
+            <a href="#"><img src="img/face.svg" width="40px" alt=""></a>
+            <a href="#"><img src="img/insta.svg" width="40px" alt=""></a>
+            <a href="#"><img src="img/gmail.svg" width="40px" alt=""></a>
+            <a href="#"><img src="img/wpp.svg" width="40px" alt=""></a>
+            <p>O copia nuestro link</p>
+
+           
+            <div class="copy">
+                 <img src="img/copy.svg" width="20px" alt="">
+
+
+
+                                                            <!--  poner en value el dominio de tu sitio -->
+                 <input class="input-link" id="ejemplo" type="text" value="https://wwww.tusitio.com" /> 
+                 <button onclick="copiar(1)" type="button">Copiar</button>
+
+                <script>
+                    function copiar() {
+                    let copyInput = document.querySelector('#ejemplo');
+                    copyInput.select();
+                    document.execCommand("copy");
+                }
+                </script>
+
+            </div> 
+   
+        </div>
+    </div>
+</footer>
+
+
+
+
+</body>
+
+</html>
